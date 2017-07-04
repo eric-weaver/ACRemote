@@ -12,8 +12,39 @@
     tools:context="com.weaver.eric.acremote.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <Button
+        android:id="@+id/key_power"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Power"/>
+    <Button
+        android:id="@+id/key_up"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Warmer"
+        android:layout_above="@+id/key_left"
+        android:layout_toStartOf="@+id/key_right" />
+    <Button
+        android:id="@+id/key_down"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Cooler"
+        android:layout_below="@+id/key_right"
+        android:layout_toEndOf="@+id/key_left" />
+    <Button
+        android:id="@+id/key_left"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Slower"
+        android:layout_above="@+id/key_down"
+        android:layout_toStartOf="@+id/key_up" />
+    <Button
+        android:id="@+id/key_right"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Faster"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/power"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

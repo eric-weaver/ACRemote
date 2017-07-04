@@ -1,3 +1,6 @@
+# Secrets file
+**/*/res/values/secrets.xml
+
 # Built application files
 *.apk
 *.ap_
